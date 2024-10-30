@@ -1,0 +1,63 @@
+#p1head {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.p1div {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    padding: 24px;
+}
+#p1c1 {
+    background-color: #7A777F;
+    color: white;
+}
+#p1c2 {
+    background-color: #008BBB;
+    color: white;
+}
+#p1c3 {
+    background-color: #7FD1AE;
+    color: white;
+}
+#p2head {
+    text-align: center;
+    font-family: cursive;
+}
+.p2div {
+    font-family: cursive;
+    text-align: center;
+    padding: 24px;
+}
+#p2c1 {
+    background-color: #7A777F;
+    color: black;
+}
+#p2c2 {
+    background-color: #8B7462;
+    color: black;
+}
+#p2c3 {
+    background-color: #4F817A;
+    color: black;
+}
+#p3head {
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+}
+.p3div {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    padding: 24px;
+}
+#p3c1 {
+    background-color: #0073A3;
+    color: gold;
+}
+#p3c2 {
+    background-color: #379EB6;
+    color: gold;
+}
+#p3c3 {
+    background-color: #B2CCD4;
+    color: gold;
+}
