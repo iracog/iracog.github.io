@@ -1,0 +1,14 @@
+div {
+    border: 15px dashed orangered;
+    margin: 24px 50px 180px 200px;
+    padding: 24px 50px;
+    background-color: blue;
+}
+p {
+    border: 14px solid purple;
+    background-color: green;
+    color: ghostwhite;
+    margin: 30px 50px 100px;
+    padding: 20px 40px 60px 80px;
+    border-radius: 30px;
+}
