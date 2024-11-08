@@ -8,7 +8,9 @@ body {
 #nba1 {
     width: 700px;
     display: block;
-    margin: auto;
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
 }
 #curtis {
     text-align: center;
