@@ -19,7 +19,6 @@ body {
 }
 #header #bay {
     color: teal;
-    
     padding: 4px;
     border-radius: 12px;
 }
@@ -31,7 +30,6 @@ body {
 #payout h3 {
     width: 350px;
 }
-
 #payout p {
     list-style-type: none;
     padding: 12px 0px;
