@@ -16,8 +16,7 @@ body {
 }
 .card-container {
     display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
+    align-items: center;
     gap: 36px;
 }
 .card-style-2 {
@@ -28,11 +27,13 @@ body {
     border: 3px solid white;
     border-radius: 10%;
 }
-.card-style-2 .animagram-header {
+.animagram-header, .animagram-footer {
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+.animagram-header .brand-name {
     font-size: 30px;
-    font-weight: bold;
 }
 .card-style-2 .animagram-header .logo {
     font-size: 36px;
@@ -44,12 +45,12 @@ body {
     text-align: center;
 }
 .card-style-2 img {
-    width: 65%;
+    width: 200px;
     margin: 0px auto;
     object-fit: cover;
     border-radius: 50%;
     display: flex;
-    justify-content: center;
+    
 }
 .card-style-2 h2 {
     text-align: center;
@@ -59,15 +60,15 @@ body {
 }
 .card-style-2 p {
     font-size: 16px;
-    padding: 20px;
-    margin: 0px;
+    padding: px;
+    margin-bottom: 30px;
 
 }
-.card-style-2 .animagram-footer  {
+.animagram-footer  {
     display: flex;
    justify-content: space-between;
    padding: 36px 0px 0px;
    font-size: 24px;
-   text-align: center;
+   
 }
 
