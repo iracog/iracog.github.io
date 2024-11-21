@@ -93,10 +93,9 @@ h2 {
 }
 .card {
     background-color: #5b00ed;
-    color: goldenrod;
     padding: 48px;
+    color: goldenrod;
 }
-
 
 .card-container {
     display: flex;
