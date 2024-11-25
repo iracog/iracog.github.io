@@ -41,15 +41,12 @@ body {
         text-align: center;
         
     }
-    #lvl2 {
-        background-color: purple;
-    }
 }
 #main {
     font-size: 35px;
 }
 #navbar2 {
-    background: linear-gradient(to bottom, green, #3e6d3e);
+    background: linear-gradient(to bottom, rgb(81, 65, 30), #3e6d3e);
     position: sticky;
     top: 0px;
     .contain {
@@ -79,21 +76,21 @@ body {
         text-align: center;
         
     }
-    #lvl2 {
-        background-color: purple;
-    }
 }
 #main {
     font-size: 35px;
 }
 #navbar3 {
-    background: linear-gradient(to bottom, orange, #a48c45);
+    background: linear-gradient(to bottom, whitesmoke, #a48c45);
     position: sticky;
     top: 0px;
     .contain {
         display: flex;
         justify-content: space-between;
         align-items: center;
+    }
+    h1 {
+        color: orange;
     }
     a {
         text-decoration: none;
@@ -118,7 +115,7 @@ body {
         
     }
     #lvl2 {
-        background-color: rgb(100, 69, 2);
+        background: linear-gradient(to bottom, orange, #a48c45);
     }
 }
 #main {
