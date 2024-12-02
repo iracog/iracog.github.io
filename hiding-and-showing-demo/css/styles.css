@@ -153,7 +153,7 @@ body {
     We'll do that with the properties below.
 */
 #card6 .card-front {
-    background-image: url("../images/perrito.png");
+    background-image: url("../images/start.jpg");
     background-size: cover;
     border-radius: 12px;
     width: 100%;
@@ -200,7 +200,7 @@ body {
     quite the one we're looking for.
 */
 #card6 .card-front {
-    background-image: url("../images/perrito.png");
+    background-image: url("../images/start.jpg");
     background-size: cover;
     border-radius: 12px;
     width: 100%;
