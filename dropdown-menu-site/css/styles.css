@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    background-color: #d8d8d8;
+}
+nav {
+    background-color: dodgerblue;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 24px;
+    &:hover {
+        background-color: rgb(181, 174, 156);
+    };
+}
+nav > .logo {
+   margin-right: auto;
+   font-weight: bold;
+   font-size: 36px;
+  padding-top: 13px;
+  padding-bottom: 12px;
+}
+.dropdown-container {
+    position: relative;
+}
+.dropdown-menu {
+    position: absolute;
+    box-shadow: -2px 2px 5px #5558;
+    opacity: 0;
+    visibility: hidden;
+    transition: 
+        opacity 0.5s,
+        visibility 0.5s
+    ;
+}
+.dropdown-menu a {
+    background-color: goldenrod;
+    width: 100%;
+    min-width: 200px;
+}
+.dropdown-container:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+}
+#hero-1 {
+    background-image: url(../images/who.jpg);
+    background-size: cover;
+    background-position: center right;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    h1 {
+        font-size: 120px;
+        padding-left: 100px;
+    }
+}
+img {
+    width: 100%;
+    object-fit: cover;
+}
+.contain {
+    width: 90vw;
+    max-width: 800px;
+    margin: 48px auto;
+}
+nav {
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+nav a {
+    padding: 20px 0px;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+.intro {
+        display: flex;
+        align-items: center;
+        gap: 48px;
+}
+.intro img {
+        height: 100%;
+        border-radius: 24px;
+}
+.img-contain, .content {
+        flex: 1;
+}
+.img-contain {
+        height: 400px;
+}
+.content h1 {
+        font-size: 48px;
+        color: black;
+}
+.featured {
+    background-color: #222;
+    color: white;
+    padding: 24px 0px;
+    h2 {
+        font-size: 36px;
+        text-align: center;
+    }
+}
