@@ -15,6 +15,7 @@ body {
     background: linear-gradient(to top, #ffffff, #231f20);
     position: sticky;
     top: 0px;
+    z-index: 1;
     .contain {
         display: flex;
         justify-content: space-between;
@@ -44,6 +45,11 @@ body {
     }
     #lvl2 {
        background-color: #2b72b9;
+      
+    }
+    #lvl2 .contain {
+        display: flex;
+        justify-content: center;
     }
 }
 nav {
