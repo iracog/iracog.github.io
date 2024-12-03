@@ -441,7 +441,8 @@ body {
 /* TODO: Write your media queries here */
 @media screen and (max-width: 1000px) and (min-width: 801px) {
     #grid-layout {
-     grid-template-areas: 
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
         "header  header  header"
         "navbar  navbar  navbar"
         "banner  banner  banner"
@@ -449,48 +450,24 @@ body {
         "aside   blog    blog"
         "footer  footer  footer"
         "bottom  bottom  bottom"
-     ;
-    }
-    grid-template-columns:. 335px 330px 335px . ;
-   
-    .intro {
-   
-        flex-direction: column;
-    }
-    .content h1 {
-        
-        flex-direction: column;
-    }
-    #hero-1 {
-       background-position: center center;
-    }
+        ;
+      } 
  }
  
  @media screen and (max-width: 800px) {
     #grid-layout {
-        "header  header"
-        "navbar  navbar"
-        "banner  banner"
-        "card-1  card-2"
-        "aside   blog "
-        "footer  footer"
-        "bottom  bottom"
-        "navbar banner"
-        "card-3 blog"
-        "footer bottom"
+    grid-template-columns: 100vw;
+    grid-template-areas:
+        "header"
+        "navbar"
+        "banner"
+        "card-1"
+        "card-2"
+        "card-3"
+        "aside"
+         "blog"
+        "footer"
+        "bottom"
         ;
-    }
-   
-    .intro {
-   
-        flex-direction: column;
-    }
-    .content h1 {
-   
-        flex-direction: column;
-        
-    }
-    #hero-1 {
-        background-position: center center;
-    }
+     }
  }
