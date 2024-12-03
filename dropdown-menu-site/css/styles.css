@@ -113,3 +113,39 @@ nav a {
         text-align: center;
     }
 }
+@media screen and (max-width: 780px) and (min-width: 481px) {
+    nav {
+       flex-direction: column;
+    }
+   
+    .intro {
+   
+        flex-direction: column;
+    }
+    .content h1 {
+        
+        flex-direction: column;
+    }
+    #hero-1 {
+       background-position: center center;
+    }
+ }
+ 
+ @media screen and (max-width: 480px) {
+    nav {
+       flex-direction: column;
+    }
+   
+    .intro {
+   
+        flex-direction: column;
+    }
+    .content h1 {
+   
+        flex-direction: column;
+        
+    }
+    #hero-1 {
+        background-position: center center;
+    }
+ }
