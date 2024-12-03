@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    padding: 0;
+    font-family: sans-serif;
+}
+.contain {
+    width: 80vw;
+    max-width: 1440px;
+    margin: 0px auto;
+} 
+#navbar {
+    background: linear-gradient(to top, #ffffff, #231f20);
+    position: sticky;
+    top: 0px;
+    .contain {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+        padding: 24px;
+    }
+    img {
+        width: 200px;
+    }
+    #logo {
+        margin-right: auto;
+    }
+    .btn {
+        background-color: white;
+        color: #2b72b9;
+        border-radius: 36px;
+        padding: 16px 24px;
+        font-size: 20px;
+        font-weight: bold;
+        min-width: 150px;
+        text-align: center;
+        
+    }
+    #lvl2 {
+       background-color: #2b72b9;
+    }
+}
+nav {
+    background-color: #2b72b9;
+    display: flex;
+    align-items: center;
+}
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 24px;
+    &:hover {
+        background-color: #003a7d;
+    }
+}
+nav > .logo {
+   margin-right: auto;
+   font-weight: bold;
+   font-size: 36px;
+  padding-top: 13px;
+  padding-bottom: 12px;
+}
+.dropdown-container {
+    position: relative;
+}
+.dropdown-menu {
+    position: absolute;
+    box-shadow: -2px 2px 5px #5558;
+    opacity: 0;
+    visibility: hidden;
+    transition: 
+        opacity 0.5s,
+        visibility 0.5s
+    ;
+}
+.dropdown-menu a {
+    background-color: #2b72b9;
+    width: 100%;
+    min-width: 200px;
+}
+.dropdown-container:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+}
+#hero-1 {
+    background-image: url(../images/downtown.jpg);
+    background-size: cover;
+    background-position: center right;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    h1 {
+        margin-right: auto;
+        margin-left: auto;
+        background-image: linear-gradient(to top, #231f20, #2b72b9, #231f20);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 100px;
+        padding-left: 100px;
+    }
+}
+@keyframes fade-inout{
+    0%{opacity: 1;}
+    100%{opacity: 0;}
+}
+#hero-1 h1 {
+    animation: fade-inout 5s infinite alternate;
+}
+#two-columns {
+    display: flex;
+    width: 90vw;
+    height: 100vh;
+    margin: 48px 0px 0px 48px;
+    gap: 24px;
+}
+#two-columns h2 {
+    text-align: center;
+}
+
+#main {
+   margin: 0px auto;
+   border: 24px;
+   
+   
+}
+#column {
+    margin: 0px auto;
+    border: 24px;
+    
+}
