@@ -5,6 +5,7 @@ body {
     margin: 0px;
     padding: 0;
     font-family: sans-serif;
+   
 }
 .contain {
     width: 80vw;
@@ -27,7 +28,7 @@ body {
         padding: 24px;
     }
     img {
-        width: 200px;
+        width: 150px;
     }
     #logo {
         margin-right: auto;
@@ -35,14 +36,18 @@ body {
     .btn {
         background-color: white;
         color: #2b72b9;
-        border-radius: 36px;
-        padding: 16px 24px;
-        font-size: 20px;
+        border-radius: 10px;
+        padding: 12px 20px;
+        font-size: 15px;
         font-weight: bold;
-        min-width: 150px;
+        min-width: 100px;
         text-align: center;
-        
+        &:hover {
+            background-color: #003a7d;
+            color: white;
+        }
     }
+    
     #lvl2 {
        background-color: #2b72b9;
       
@@ -66,6 +71,7 @@ nav a {
         background-color: #003a7d;
     }
 }
+
 nav > .logo {
    margin-right: auto;
    font-weight: bold;
@@ -141,4 +147,102 @@ nav > .logo {
     margin: 0px auto;
     border: 24px;
     
+}
+
+#text {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+span {
+    font-size: calc(1em + 7vw);
+    padding: 0 calc(0.5rem + 0.5vw);
+    position: relative;
+    opacity: 0;
+}
+span:not(#dot) {
+    bottom: -200px;
+    animation-name: appear;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+span:nth-of-type(2) {
+    animation-delay: 0.2s;
+}
+span:nth-of-type(3) {
+    animation-delay: 0.4s;
+}
+span:nth-of-type(4) {
+    animation-delay: 0.6s;
+}
+span:nth-of-type(5) {
+    animation-delay: 0.8s;
+}
+span:nth-of-type(6) {
+    animation-delay: 1.0s;
+}
+span:nth-of-type(7) {
+    animation-delay: 1.2s;
+}
+span:nth-of-type(8) {
+    animation-delay: 1.4s;
+}
+span:nth-of-type(9) {
+    animation-delay: 1.6s;
+}
+
+#dot {
+    bottom: 100px;
+    animation-name: dot;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 2.3s;
+}
+@keyframes appear {
+    0% {
+        opacity: 0;
+        bottom: -200px;
+    }
+    70% {
+        opacity: 1;
+        bottom: 15px;
+    }
+    85% {
+        opacity: 1;
+        bottom: -10;
+    }
+    100% {
+        opacity: 1;
+        bottom: 0;
+    }
+}
+@keyframes dot {
+    0% {
+        opacity: 0;
+        bottom: 100px;
+    }
+    50% {
+        opacity: 1;
+        bottom: 0;
+    }
+    65% {
+        opacity: 1;
+        bottom: 15px;
+    }
+    75% {
+        opacity: 1;
+        bottom: 0;
+    }
+    90% {
+        opacity: 1;
+        bottom: 10px;
+    }
+    100% {
+        opacity: 1;
+        bottom: 0;
+    }
 }
