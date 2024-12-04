@@ -1,4 +1,10 @@
-
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
 .card {
     margin: 0 auto;
     padding: 2em;
