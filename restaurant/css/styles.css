@@ -1,10 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 * {
     box-sizing: border-box;
 }
 body {
     margin: 0px;
     padding: 0;
-    font-family: sans-serif;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
 }
 .contain {
     width: 80vw;
@@ -12,7 +16,7 @@ body {
     margin: 0px auto;
 } 
 #navbar {
-    background: linear-gradient(to top, #ffffff, yellow);
+    background: linear-gradient(to top, #ffffff, #F7EC13);
     position: sticky;
     top: 0px;
     z-index: 1;
@@ -24,10 +28,11 @@ body {
     a {
         text-decoration: none;
         color: white;
-        padding: 24px;
+        padding: 12px;
+        width: 75px;
     }
     img {
-        width: 250px;
+        width: 120px;
         
     }
     #logo {
@@ -37,30 +42,35 @@ body {
     }
     .btn {
         background-color: white;
-        color: green;
+        color: #6ABD45;
         border-radius: 10px;
-        padding: 12px 20px;
+        padding: 5px;
         font-size: 15px;
         font-weight: bold;
         min-width: 100px;
         text-align: center;
         &:hover {
-            background-color: green;
+            background-color: #F7EC13;
             color: white;
+            padding: 5px;
         }
     }
     
     #lvl2 {
-       background-color: green;
+       background-color: #6ABD45;
       
     }
     #lvl2 .contain {
         display: flex;
         justify-content: center;
+        a:hover {
+            color: #6ABD45;
+        }
+        
     }
 }
 nav {
-    background-color: green;
+    background-color: #6ABD45;
     display: flex;
     align-items: center;
 }
@@ -70,7 +80,9 @@ nav a {
     color: white;
     padding: 24px;
     &:hover {
-        background-color: limegreen;
+        background-color: #F7EC13;
+        border-radius: 10px;
+        
     }
 }
 
@@ -81,45 +93,42 @@ nav > .logo {
   padding-top: 13px;
   padding-bottom: 12px;
 }
-.dropdown-container {
-    position: relative;
-}
-.dropdown-menu {
-    position: absolute;
-    box-shadow: -2px 2px 5px #5558;
-    opacity: 0;
-    visibility: hidden;
-    transition: 
-        opacity 0.5s,
-        visibility 0.5s
-    ;
-}
-.dropdown-menu a {
-    background-color: #2b72b9;
-    width: 100%;
-    min-width: 200px;
-}
-.dropdown-container:hover .dropdown-menu {
-    opacity: 1;
-    visibility: visible;
-}
+
 #hero-1 {
     background-image: url(../images/hero.jpg);
     background-size: cover;
     background-position: center right;
+    background-position: bottom;
     height: 100vh;
     display: flex;
     justify-content: flex-start;
+    flex-direction: column;
     align-items: center;
     h1 {
         margin-right: auto;
         margin-left: auto;
-        background-image: linear-gradient(to top, #231f20, #2b72b9, #231f20);
+        background-image: linear-gradient(to top, green,white, #F7EC13,white, #6ABD45);
         background-clip: text;
         -webkit-text-fill-color: transparent;
         font-size: 100px;
         padding-left: 100px;
     }
+    .btn {
+        text-decoration: none;
+        background-color: white;
+        color: #6ABD45;
+        border-radius: 10px;
+        padding: 15px 20px;
+        font-size: 40px;
+        font-weight: bold;
+        min-width: 200px;
+        text-align: center;
+        &:hover {
+            background-color: #6ABD45;
+            color: white;
+        }
+    }
+
 }
 #footer-navbar {
     text-align: center;
@@ -136,6 +145,8 @@ img {
         gap: 48px;
 }
 .intro img {
+        margin-top: 24px;
+        margin-bottom: px;
         height: 100%;
         border-radius: 24px;
 }
@@ -146,8 +157,8 @@ img {
         height: 400px;
 }
 .content h1 {
-        font-size: 48px;
-        color: #ffb700;
+        font-size: 30px;
+        color: #F7EC13;
 }
 .featured {
     background-color: #222;
@@ -164,30 +175,34 @@ img {
     align-items: flex-start;
 }
 .card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     flex: 300px;
-    border: 3px solid black;
-    margin: 24px;
+    border: 3px solid #F7EC13;
+    color: #6ABD45;
+    margin: 50px;
     padding: 24px;
     border-radius: 12px;
     text-align: center;
     a {
         border-radius: 24px;
         text-decoration: none;
-        color: black;
+        color: #6ABD45;
         display: block;
-        border: 3px solid black;
+        border: 3px solid #6ABD45;
         padding: 12px;
         margin-top: 36px;
     }
 }
 
 .card2:hover a {
-    background-color: red;
+    background-color: #FBB03A;
+    color: white;
     box-shadow: 4px 4px 4px #0003;
     transform: translateY(-4px);
 }
 .card2 a {
-    background-color: goldenrod;
+    background-color: #F7EC13;
     transition: 
     background-color 0.5s,
     box-shadow 0.5s,
@@ -195,7 +210,8 @@ img {
 }
 @media screen and (max-width: 780px) and (min-width: 481px) {
     nav {
-       flex-direction: column;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
    
     .intro {
@@ -208,12 +224,27 @@ img {
     }
     #hero-1 {
        background-position: center center;
+       background-position: bottom;
+    }
+    #hero-1 h1 {
+        font-size: 75px;
+        text-align: center;
+        padding: 0px;
+    }
+    #hero-1 .btn {
+        border-radius: 10px;
+        padding: 18px 25px;
+        font-size: 20px;
+        font-weight: bold;
+        min-width: 100px;
+        text-align: center;
     }
  }
  
  @media screen and (max-width: 480px) {
     nav {
-       flex-direction: column;
+       display: grid;
+       grid-template-columns: 1fr 1fr;
     }
    
     .intro {
@@ -227,5 +258,25 @@ img {
     }
     #hero-1 {
         background-position: center center;
+        background-position: bottom;
+        justify-content: center;
+    }
+    #hero-1 h1 {
+       font-size: 35px;
+       text-align: center;
+       padding: 0px;
+    }
+    #hero-1 .btn {
+        border-radius: 10px;
+        padding: 12px 20px;
+        font-size: 15px;
+        font-weight: bold;
+        min-width: 100px;
+        text-align: center;
+        margin-bottom: 125px;
+    }
+    .card {
+        flex: 1;
+        margin: 20px 0px;
     }
  }
