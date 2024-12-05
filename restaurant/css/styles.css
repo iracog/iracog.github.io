@@ -5,8 +5,6 @@ body {
     margin: 0px;
     padding: 0;
     font-family: sans-serif;
-    background-color: ;
-   
 }
 .contain {
     width: 80vw;
@@ -195,3 +193,39 @@ img {
     box-shadow 0.5s,
     transform 0.5s;
 }
+@media screen and (max-width: 780px) and (min-width: 481px) {
+    nav {
+       flex-direction: column;
+    }
+   
+    .intro {
+   
+        flex-direction: column;
+    }
+    .content h1 {
+        
+        flex-direction: column;
+    }
+    #hero-1 {
+       background-position: center center;
+    }
+ }
+ 
+ @media screen and (max-width: 480px) {
+    nav {
+       flex-direction: column;
+    }
+   
+    .intro {
+   
+        flex-direction: column;
+    }
+    .content h1 {
+   
+        flex-direction: column;
+        
+    }
+    #hero-1 {
+        background-position: center center;
+    }
+ }
