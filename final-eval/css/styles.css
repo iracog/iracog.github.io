@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    padding: 0;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.content  {
+    display: flex;
+    flex-direction: center;
+    gap: 25px;
+    margin: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 36px 36px 60px;
+    width: 640px;
+
+}
+nav a {
+    margin: 0px;
+    margin-left: 200px;
+    
+}
+#lvl3 .btn {
+    margin: 0px;
+    margin-left: 200px;
+}
+.btn {
+    text-decoration: none;
+    background-color: white;
+    color: blue;
+    border-radius: 10px;
+    padding: 0px 10px;
+    font-size: 40px;
+    font-weight: bold;
+    min-width: 200px;
+    text-align: center;
+    &:hover {
+        background-color: blue;
+        color: white;
+    }
+}
+section > img {
+    box-shadow: 2px 2px 6px grey;
+    width: 100%;
+}
+h1, h2, h3, h4 {
+    text-align: center;
+}
+#container .content img {
+    display: flex;
+   
+}
+.lvl2 {
+    text-align: center;
+}
+@media screen and (max-width: 780px) and (min-width: 481px) {
+    nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+   
+   
+    .content h1 {
+        
+        flex-direction: column;
+    }
+    #hero-1 {
+       background-position: center center;
+       background-position: bottom;
+    }
+    #hero-1 h1 {
+        font-size: 75px;
+        text-align: center;
+        padding: 0px;
+    }
+    #hero-1 .btn {
+        border-radius: 10px;
+        padding: 18px 25px;
+        font-size: 20px;
+        font-weight: bold;
+        min-width: 100px;
+        text-align: center;
+    }
+ }
+ 
+ @media screen and (max-width: 480px) {
+    nav {
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+    }
+   
+    .intro {
+   
+        flex-direction: column;
+    }
+    .content h1 {
+   
+        flex-direction: column;
+        
+    }
+    #hero-1 {
+        background-position: center center;
+        background-position: bottom;
+        justify-content: center;
+    }
+    #hero-1 h1 {
+       font-size: 35px;
+       text-align: center;
+       padding: 0px;
+    }
+    #hero-1 .btn {
+        border-radius: 10px;
+        padding: 12px 20px;
+        font-size: 15px;
+        font-weight: bold;
+        min-width: 100px;
+        text-align: center;
+        margin-bottom: 125px;
+    }
+    .content {
+        flex-wrap: wrap;
+        margin: 20px 0px;
+        
+    }
+ }
