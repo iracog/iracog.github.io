@@ -62,13 +62,13 @@ nav {
     display: flex;
     align-items: center;
 }
-nav a {
+#navbar a {
     display: inline-block;
     text-decoration: none;
     color: white;
     padding: 24px;
     &:hover {
-        background-color: #003a7d;
+       color: #003a7d;
     }
 }
 
