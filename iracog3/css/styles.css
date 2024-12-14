@@ -11,7 +11,11 @@ body {
     width: 80vw;
     max-width: 1440px;
     margin: 0px auto;
-} 
+}
+img {
+    width: 100%;
+    object-fit: cover;
+}
 #navbar {
     background: linear-gradient(to top, #ffffff, #231f20);
     position: sticky;
@@ -28,7 +32,16 @@ body {
         padding: 24px;
     }
     img {
-        width: 150px;
+        width: 100px;
+    }
+    h1 {
+        margin-left: auto;
+        margin-right: auto;
+        background-image: linear-gradient(to top, #231f20, white, #2b72b9, white, #231f20);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 30px;
+        padding-left: 100px;
     }
     #logo {
         margin-right: auto;
@@ -118,6 +131,157 @@ nav > .logo {
         font-size: 100px;
         padding-left: 100px;
     }
+}
+.intro {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+.intro img {
+    height: 100%;
+    border-radius: 24px;
+}
+.img-contain, .content {
+    flex: 1;
+}
+.img-contain {
+    height: 400px;
+}
+.content h1 {
+    font-size: 48px;
+    color: #ffb700;
+}
+.featured {
+    background-color: #222;
+    color: white;
+    padding: 24px 0px;
+    h2 {
+        font-size: 36px;
+        text-align: center;
+    }
+}
+.grid img {
+    height: 300px;
+    border-radius: 24px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 16px;
+    grid-template-areas:
+        "t1 i1 i2 i2" 
+        "i3 i3 i4 t2"
+    ;
+    #p1 {
+        grid-area: t1;
+    }
+    #p2 {
+        grid-area: t2;
+    }
+    #img1 {
+        grid-area: i1;
+    }
+    #img2 {
+        grid-area: i2;
+    }
+    #img3 {
+        grid-area: i3;
+    }
+    #img4 {
+        grid-area: i4;
+    }
+    p {
+        border: 2px solid #ffb700;
+        border-radius: 24px;
+        margin: 0px;
+        padding: 20px;
+    }
+}
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2b72b9 no-repeat center/cover;
+}
+.container form {
+    width: 670px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(30px);
+    flex-wrap: wrap;
+}
+.container form h1 {
+    color: #fff;
+    font-weight: 700;
+    line-height: 2;
+    margin-top: 20px;
+    width: 500px;
+    text-align: center;
+}
+.container form input {
+    width: 300px;
+    height: 50px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    margin-bottom: 10px;
+    background: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+}
+.container form input::placeholder {
+    color: #fff;
+}
+.container form #lastName,
+.container form #mobile {
+    margin-left: 20px;
+}
+.container form h4{
+    color: #fff;
+    font-weight: 300;
+    width: 600px;
+    margin-top: 20px;
+}
+.container form textarea {
+    background: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    font-weight: 200;
+    font-size: 20px;
+    padding: 10px;
+    outline: none;
+    min-height: 90px;
+    max-height: 90px;
+    min-width: 620px;
+    max-width: 620px;
+}
+.container form h4 {
+    font-size: 20px;
+}
+.container form #button {
+    border: none;
+    background: #fff;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 24px;
+    color: #000;
+    width: 200px;
+    height: 60px;
+    padding: 0;
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+.container form #button:hover {
+    background: #2b72b9;
+    color: #fff;
+    transition: .5s ease-in-out;
 }
 @keyframes fade-inout{
     0%{opacity: 1;}
@@ -246,3 +410,55 @@ span:nth-of-type(9) {
         bottom: 0;
     }
 }
+
+@media screen and (max-width: 768px) and (min-width: 481px) {
+    .content h1 {
+         font-size: 32px;
+    }
+    .intro {
+         gap: 24px;
+    }
+    .img-contain {
+         height: 300px;
+    }
+    .grid {
+     grid-template-columns: 1fr 1fr;
+     grid-template-areas:
+         "t1 i1" 
+         "i2 i2"
+         "i3 i3"
+         "i4 t2"
+     ;
+     
+ }
+ }
+ @media screen and (max-width: 480px) {
+     nav {
+         flex-direction: column;
+         align-items: center;
+         padding: 20px 0px;
+     }
+     nav a {
+         padding: 0px;
+     }
+     .intro {
+         flex-direction: column;
+         gap: 24px;
+     }
+     .content h1 {
+         margin: 0px;
+         font-size: 32px;
+     }
+     .grid {
+         grid-template-columns: 1fr;
+         grid-template-areas:
+             "t1" 
+             "i1"
+             "i2"
+             "i3"
+             "i4"
+             "t2"
+         ;
+         
+     }
+ }
