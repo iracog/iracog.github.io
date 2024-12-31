@@ -16,6 +16,64 @@ img {
     width: 100%;
     object-fit: cover;
 }
+#lvl1 {
+    position: relative;
+    background: linear-gradient(to top, #ffffff, #231f20);
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    .contain {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+        padding: 24px;
+    }
+    img {
+        width: 100px;
+    }
+    #logo {
+        margin-right: auto;
+    }
+    h1 {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: linear-gradient(to top, #231f20, white, #2b72b9, white, #231f20);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 30px;
+        padding-left: 100px;
+    }
+   
+    p {
+        margin-left: auto;
+    }
+    .btn {
+        background-color: white;
+        color: #2b72b9;
+        border-radius: 10px;
+        padding: 12px 20px;
+        font-size: 15px;
+        font-weight: bold;
+        min-width: 100px;
+        text-align: center;
+        &:hover {
+            background-color: #003a7d;
+            color: white;
+        }
+    }
+}
+.contain ul {
+    text-decoration: none;
+    list-style-type: none;
+    background-image: linear-gradient(to bottom, #231f20, #2b72b9,  #231f20, #2b72b9);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
 #navbar {
     background: linear-gradient(to top, #ffffff, #231f20);
     position: sticky;
@@ -136,6 +194,7 @@ nav > .logo {
     display: flex;
     align-items: center;
     gap: 48px;
+    margin-top: 48px;
 }
 .intro img {
     height: 100%;
@@ -172,10 +231,10 @@ nav > .logo {
         "t1 i1 i2 i2" 
         "i3 i3 i4 t2"
     ;
-    #p1 {
+    #img6 {
         grid-area: t1;
     }
-    #p2 {
+    #img5 {
         grid-area: t2;
     }
     #img1 {
@@ -335,6 +394,7 @@ textarea::placeholder {
     transform: translateY(-50%);
 }
 span {
+    min-height: 400px;
     font-size: calc(1em + 7vw);
     padding: 0 calc(0.5rem + 0.5vw);
     position: relative;
@@ -426,6 +486,7 @@ span:nth-of-type(9) {
 }
 
 @media screen and (max-width: 768px) and (min-width: 481px) {
+   
     .content h1 {
          font-size: 32px;
     }
@@ -486,3 +547,103 @@ span:nth-of-type(9) {
         width: 60%;
     }
 }
+@media screen and (max-width: 780px) and (min-width: 481px) {
+    nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #lvl1 {
+        display: grid;
+       grid-template-columns: 1fr;
+    }
+   
+    .intro {
+   
+        flex-direction: column;
+    }
+    .content h1 {
+        
+        flex-direction: column;
+    }
+    #hero-1 {
+       background-position: center center;
+       background-position: bottom;
+    }
+    #hero-1 h1 {
+        font-size: 75px;
+        text-align: center;
+        padding: 0px;
+    }
+    #hero-1 .btn {
+        border-radius: 10px;
+        padding: 18px 25px;
+        font-size: 20px;
+        font-weight: bold;
+        min-width: 100px;
+        text-align: center;
+    }
+ }
+ 
+ @media screen and (max-width: 480px) {
+    nav {
+       display: grid;
+       grid-template-columns: 1fr 1fr;
+    }
+    #lvl1 {
+       display: grid;
+       grid-template-columns: 1fr;
+        
+    }
+   
+    .intro {
+   
+        flex-direction: column;
+    }
+    .content h1 {
+   
+        flex-direction: column;
+        
+    }
+    #hero-1 {
+        background-position: center center;
+        background-position: bottom;
+        justify-content: center;
+    }
+    #hero-1 h1 {
+       font-size: 35px;
+       text-align: center;
+       padding: 0px;
+    }
+    #hero-1 .btn {
+        border-radius: 10px;
+        padding: 12px 20px;
+        font-size: 15px;
+        font-weight: bold;
+        min-width: 100px;
+        text-align: center;
+        margin-bottom: 125px;
+    }
+    .card {
+        flex: 1;
+        margin: 20px 0px;
+    }
+ }
+
+ @media (min-width: 475px) {
+
+ }
+ @media (min-width: 640px) {
+
+ }
+ @media (min-width: 768px) {
+
+ }
+ @media (min-width: 1024px) {
+
+ }
+ @media (min-width: 1200px) {
+
+ }
+ @media (min-width: 1536px) {
+
+ }

@@ -4,10 +4,64 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Contact</title>
+        <script src="https://kit.fontawesome.com/08b6acc319.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
-        
+        <div id="navbar">
+            <div id="lvl1">
+                <div class="contain">
+                    <a href="index.html" id="logo">
+                        <img src="images/i378it.png" alt="First logo">
+                    </a>
+                    <h1>"TRUST THE SOURCE"</h1>
+                </div>
+                <a href="#" class="btn">Sign Up</a>
+            </div>
+            <div id="lvl2">
+                <div class="contain">
+                    <nav>
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <div class="dropdown-container">
+                            <a href="services.html">Services <i class="fa-solid fa-chevron-down"></i></a>
+                            <div class="dropdown-menu">
+                                <a href="property-management.html">Property Management</a>
+                                <a href="maintenance.html">Maintenance</a>
+                                <a href="real-estate.html">Real Estate</a>
+                                <a href="source.html">Source</a>
+                            </div>
+                        </div>
+                        <a href="blog.html">Blog</a>
+                        <a href="contact.html">Contact</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <section id="contact-section">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>Email us and keep upto date with our latest news</p>
+                <div class="contact-form">
+                    <div>
+                        <i class="fa fa-map-marker"></i><span class="form-info">1407 far #765</span><br>
+                        <i class="fa fa-phone"></i><span class="form-info">1-800-456=7898</span><br>
+                        <i class="fa fa-envelope"></i><span class="form-info">bgjh@gmail.com</span>
+                    </div>
+                    <div>
+                        <form action="https://getform.io/f/axoogwwb" method="post">
+                            <input type="text" placeholder="First Name" required>
+                            <input type="text" placeholder="Last Name" required>
+                            <input type="email" placeholder="Email Adress" required>
+                            <input type="text" placeholder="Subject Of This Message" required>
+                            <textarea name="message" placeholder="Message" rows="5" required></textarea>
+                            <button class="submit">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
     </body>
 </html>

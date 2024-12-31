@@ -4,43 +4,45 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Home</title>
+        <script src="https://kit.fontawesome.com/08b6acc319.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
         <div id="navbar">
             <div id="lvl1">
                 <div class="contain">
-                    <a href="#" id="logo">
+                    <a href="index.html" id="logo">
                         <img src="images/i378it.png" alt="First logo">
                     </a>
-                    
-                    <a href="#" class="btn">Sign Up</a>
                 </div>
             </div>
             <div id="lvl2">
                 <div class="contain">
-                    <ul>
-                       <li><a href="#">About</a></li>
-                        <li>
-                            <a href="#">Services</a>
-                            <ul class="dropdown">
-                                <li><a href="#">Maintenance</a></li>
-                                <li><a href="#">Maintenance</a></li>
-                                <li><a href="#">Maintenance</a></li>
-                                <li><a href="#">Maintenance</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Blog</a></li>
-                       <li><a href="#">Contact</a></li>
-                    </ul>
+                    <nav>
+                        <a href="index.html">Home</a>
+                        <a href="about.html">About</a>
+                        <div class="dropdown-container">
+                            <a href="services.html">Services <i class="fa-solid fa-chevron-down"></i></a>
+                            <div class="dropdown-menu">
+                                <a href="property-management.html">Property Management</a>
+                                <a href="maintenance.html">Maintenance</a>
+                                <a href="real-estate.html">Real Estate</a>
+                                <a href="source.html">Source</a>
+                            </div>
+                        </div>
+                        <a href="blog.html">Blog</a>
+                        <a href="contact.html">Contact</a>
+                    </nav>
                 </div>
             </div>
         </div>
         <div id="hero-1">
-           <h1>THE SOURCE</h1>
-        </div> 
-        <div id="two-columns">
+            <h1>THE SOURCE</h1>
+            <a href="menu.html" class="btn">MENU</a>
+         </div>
+         <div id="two-columns">
             <div id="main">
                 <h2>Vision</h2>
                 <p>
@@ -59,6 +61,10 @@
                     laborum minima, illo non aliquam!
                 </p>
             </div>
-        </div>       
+        <div id="footer">
+            <div id="footer-navbar">
+                <span>&copy; IRACOG3</span>
+            </div>
+        </div>   
     </body>
 </html>
