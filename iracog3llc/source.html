@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Iracogllc</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="https://kit.fontawesome.com/08b6acc319.js" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+         <section class="sub-header">
+            <nav>
+              <a href="index.html"><img src="images/web5.png" alt=""></a>
+              <div class="nav-links" id="navLinks">
+                <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="source.html">SOURCE</a></li>
+                        <li><a href="services.html">SERVICES</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                    </ul>
+              </div>
+              <i class="fa-solid fa-bars" onclick="showMenu"></i>
+            </nav>
+            <h1>Source</h1>
+       </section>
+     <!------source------>
+        <section class="course">
+            <h1>Course We Offer</h1>
+            <p>The time has come to become what I am</p>
+            <div class="row">
+                <div class="course-col">
+                    <h3>Intermediate</h3>
+                    <p>=Lorem ipsum dolor, sit amet consectetur adipisicing 
+                        elit. Rerum odio minus suscipit labore quam doloremque, 
+                        non saepe at accusamus dolores amet corrupti? Veniam 
+                        reprehenderit, voluptas natus dolor cum nemo doloremque!
+                    </p>
+                </div>
+                 <div class="course-col">
+                    <h3>Degree</h3>
+                    <p>=Lorem ipsum dolor, sit amet consectetur adipisicing 
+                        elit. Rerum odio minus suscipit labore quam doloremque, 
+                        non saepe at accusamus dolores amet corrupti? Veniam 
+                        reprehenderit, voluptas natus dolor cum nemo doloremque!
+                    </p>
+                </div>
+                 <div class="course-col">
+                    <h3>Post Graduate</h3>
+                    <p>=Lorem ipsum dolor, sit amet consectetur adipisicing 
+                        elit. Rerum odio minus suscipit labore quam doloremque, 
+                        non saepe at accusamus dolores amet corrupti? Veniam 
+                        reprehenderit, voluptas natus dolor cum nemo doloremque!
+                    </p>
+                </div>
+            </div>
+       </section>
+     <!------facilities------> 
+        <section class="facilities">
+            <h1>Our Facilities</h1>
+            <p>The time has come to become what I am</p>
+            <div class="row">
+                <div class="facilities-col">
+                    <img src="images/downtown.jpg" alt="">
+                    <h3>World Class</h3>
+                    <p>
+                        =Lorem ipsum dolor, sit amet consectetur adipisicing 
+                        elit. Rerum odio minus suscipit labore quam doloremque, 
+                        non saepe at accusamus dolores amet corrupti? Veniam 
+                        reprehenderit, voluptas natus dolor cum nemo doloremque!
+                    </p>
+                </div>
+                <div class="facilities-col">
+                    <img src="images/downtown.jpg" alt="">
+                    <h3>World Class</h3>
+                    <p>
+                        =Lorem ipsum dolor, sit amet consectetur adipisicing 
+                        elit. Rerum odio minus suscipit labore quam doloremque, 
+                        non saepe at accusamus dolores amet corrupti? Veniam 
+                        reprehenderit, voluptas natus dolor cum nemo doloremque!
+                    </p>
+                </div>
+                <div class="facilities-col">
+                    <img src="images/downtown.jpg" alt="">
+                    <h3>World Class</h3>
+                    <p>
+                        =Lorem ipsum dolor, sit amet consectetur adipisicing 
+                        elit. Rerum odio minus suscipit labore quam doloremque, 
+                        non saepe at accusamus dolores amet corrupti? Veniam 
+                        reprehenderit, voluptas natus dolor cum nemo doloremque!
+                    </p>
+                </div>
+            </div>
+       </section>
+     <!------footer------>
+       <footer>
+            <div class="footer-col">
+                <h4>products</h4>
+                <ul>
+                    <li><a href="#">teams</a></li>
+                    <li><a href="#">advertising</a></li>
+                    <li><a href="#">talent</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>services</h4>
+                <ul>
+                    <li><a href="#">Management</a></li>
+                    <li><a href="#">Maintenance</a></li>
+                    <li><a href="#">Real Estate</a></li>
+                    <li><a href="#">source</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>company</h4>
+                <ul>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">legal</a></li>
+                    <li><a href="#">contact us</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+               <div class="links">
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+               </div>
+            </div>
+            <p>&copy; 2024 || All Rights Reserved By C.Curtis</p>
+        </footer> 
+       <!-------Javascript for Toggle Menu----->
+       <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+       </script>
+    </body>
+</html>
